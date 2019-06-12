@@ -108,3 +108,33 @@
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
+
+
+  function GameObject (name) {
+    this.name = name
+  }
+
+  GameObject.prototype.destroy = function () {
+  
+  }
+
+  function CharacterStats () {
+
+  }
+
+  CharacterStats.prototype = Object.create(GameObject.prototype)
+  CharacterStats.prototype.takeDamage = function () {
+  } 
+
+  function Humanoid () {
+
+  }
+
+  Humanoid.prototype = Object.create(GameCharacterStats.prototype)
+  Humanoid.prototype.greet = function () {
+
+  }
+
+  new Humanoid ()
+
+  
